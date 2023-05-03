@@ -8,6 +8,7 @@ namespace SimpleCommandPatter.Framework
         {
             new CreateCustomerCommandHandler(),
             new UpdateCustomerCommandHandler(),
+            new DeleteCustomerCommandHandler(),
         };
 
         public async Task Dispatch<T>(T command) where T : ICommand
